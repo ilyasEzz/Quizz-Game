@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+
+<body>
+    <nav class="navbar-nav navbar-expand navbar-dark bg-primary">
+        <a href="#" class="navbar-brand mx-2">Quizz Game</a>
+    </nav>
+    <main class="container my-4">
+        <p class="lead" id="question-title">Question....</p>
+
+
+        <ul class="list-group form-group mx-4" id="answers-list">
+        </ul>
+        <button class="btn btn-primary float-right m-4" id="answer-btn">Answer</button>
+        <button class="btn btn-dark float-right hide m-4" id="next-btn">Next</button>
+    </main>
+
+</body>
+<script src="app.js"></script>
+
+</html>

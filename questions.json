@@ -1,0 +1,57 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "title": "What is Django ?",
+            "answers": [
+                {
+                    "id": "0",
+                    "answer": "a movie"
+                },
+                {
+                    "id": "1",
+                    "answer": "a Python framework"
+                },
+                {
+                    "id": "2",
+                    "answer": "a phone brand"
+                }
+            ],
+            "correct": "1"
+        },
+        {
+            "id": 1,
+            "title": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+            "answers": [
+                {
+                    "id": "0",
+                    "answer": " <script href='xxx.js'>"
+                },
+                {
+                    "id": "1",
+                    "answer": " <script src='xxx.js'>"
+                },
+                {
+                    "id": "2",
+                    "answer": " <script name='xxx.js'>"
+                }
+            ],
+            "correct": "1"
+        },
+        {
+            "id": 2,
+            "title": "Javascript is AweSome.",
+            "answers": [
+                {
+                    "id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "id": "1",
+                    "answer": "No"
+                }
+            ],
+            "correct": "0"
+        }
+    ]
+}
