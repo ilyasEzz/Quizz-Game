@@ -4,7 +4,6 @@ const answersList = document.querySelector("#answers-list");
 const answerBtn = document.querySelector("#answer-btn");
 const nextBtn = document.querySelector("#next-btn");
 
-
 // Variables
 let questions, currentQuestion, questionsCount;
 let score = 0;
@@ -15,7 +14,7 @@ nextBtn.addEventListener("click", nextQuestion);
 
 // Functions
 const init = async () => {
-    const res = await fetch('questions.json');
+    const res = await fetch("../data/questions.json");
     const data = await res.json();
     questions = data.questions;
     currentQuestion = 0
@@ -24,10 +23,10 @@ const init = async () => {
 
 }
 
-function displayQestions(q) {
-    questionTitle.textContent = q.title;
+function displayQestions(question) {
+    questionTitle.textContent = question.title;
 
-    q.answers.forEach(el => {
+    question.answers.forEach(el => {
         let li = createHTML("li", "list-group-item custom-control custom-radio");
         let input = createHTML("input", "custom-control-input answer");
         input.setAttribute("type", "radio");
